@@ -1,0 +1,11 @@
+[Unit]
+Description=Servicio de usuarios, GET y POST
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/user_service
+Type=simple
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target

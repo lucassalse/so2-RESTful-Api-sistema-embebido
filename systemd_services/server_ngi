@@ -1,0 +1,17 @@
+server {
+        listen 80;
+
+        root /var/server_goes;
+
+        server_name tp3-so2.com;
+
+
+        location /api/users {
+                proxy_pass http://localhost:8080; #/api/users;
+        }
+
+        location /api/servers/get_goes {
+                proxy_pass http://localhost:8081 ; #/api/servers/get_goes;
+                proxy_set_header X-Real-IP $remote_addr;
+        }
+}

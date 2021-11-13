@@ -1,0 +1,12 @@
+aws s3 cp s3://noaa-goes16/<Product>/<Year>/<Day of Year>/<Hour>/<Filename> . --no-sign-request
+
+
+aws s3 cp s3://noaa-goes16/ABI-L2-MCMIPC/2018/257/01/OR_ABI-L2-MCMIPC-M3_G16_s20182570102128_e20182570104501_c20182570105007.nc . --no-sign-request
+
+
+OR_ABI-L2-MCMIPC-M3_G16_s20182570102128_e20182570104501_c20182570105007
+
+
+aws s3 ls noaa-goes16/ABI-L2-CMIPF/2021/003/00/ --no-sign-request
+
+aws s3 cp s3://noaa-goes16/ABI-L2-MCMIPF/2018/142/00/OR_ABI-L2-MCMIPF-M3_G16_s20181420000427_e20181420011205_c20181420011287.nc . --no-sign-request

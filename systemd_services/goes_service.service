@@ -1,0 +1,11 @@
+[Unit]
+Description=Servicio de goes, GET y POST
+After=nginx.service
+
+[Service]
+ExecStart=/usr/bin/goes_service
+Type=simple
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target

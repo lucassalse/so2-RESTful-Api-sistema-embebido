@@ -1,0 +1,11 @@
+[Unit]
+Description=Ejemplo de servicio Hola Mundo
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/ejemplo
+Type=oneshot
+RemainAfterExit=true
+
+[Install]
+WantedBy=default.target
